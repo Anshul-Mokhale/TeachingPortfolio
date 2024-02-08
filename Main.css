@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.NaviBar {
+    background-color: white;
+    padding: 10px 3em 10px 3em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+
+.NLeft {
+    font-family: 'Vollkorn', serif;
+    display: flex;
+    align-items: center;
+}
+
+.NRight {
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    gap: 2em;
+}
+
+.NRight li {
+    list-style: none;
+}
+
+.NRight a {
+    text-decoration: none;
+}
+
+.LINK a {
+    color: black;
+}
+
+.BUTN a {
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+
+.btun {
+    display: none;
+}
+
+.BarLinks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.BarLinks li {
+    list-style: none;
+}
+
+.BarLinks a {
+    text-decoration: none;
+}
+
+@media (max-width:710px) {
+    .btun {
+        display: block;
+    }
+
+    .NRight {
+        display: none;
+    }
+}
+
+/* Home part 1 starts */
+
+.Hpart1 {
+    margin-top: 60px;
+    background-color: black;
+    color: white;
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Hpart1 p {
+    text-align: center;
+    width: 60%;
+}
+
+.Hpart1 img {
+    margin-top: 1em;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.Butns {
+    display: flex;
+    padding: 1em;
+    gap: 1em;
+}
+
+.Butns a {
+    text-decoration: none;
+}
+
+.BTN1 {
+    border: 1px solid white;
+    color: white;
+    padding: 10px 20px 10px 20px;
+}
+
+.BTN2 {
+    background-color: white;
+    color: black;
+    padding: 10px 20px 10px 20px;
+    border-radius: 30px;
+}
