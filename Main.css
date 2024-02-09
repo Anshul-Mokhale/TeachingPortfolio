@@ -18,6 +18,8 @@
     width: 100%;
     position: fixed;
     z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Add bottom shadow */
 }
 
 .NLeft {
@@ -103,6 +105,7 @@
     margin-top: 1em;
     max-width: 100%;
     height: auto;
+    border-radius: 25px;
 }
 
 
@@ -127,4 +130,132 @@
     color: black;
     padding: 10px 20px 10px 20px;
     border-radius: 30px;
+}
+
+/* Hpart 2 starts here */
+
+/* .felx {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(196, 193, 193);
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 1em;
+    overflow: hidden;
+} */
+
+.Hpart2 {
+    overflow: hidden;
+    /* Ensure content doesn't extend beyond this container */
+}
+
+.Hpart2 .row {
+    margin: 0 -5px;
+}
+
+.Hpart2 .col {
+    padding: 0 5px;
+}
+
+.Hpart2 .felx {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(196, 193, 193);
+    margin-top: 0.5em;
+    /* Adjusted margin-top */
+    margin-bottom: 0.5em;
+    /* Adjusted margin-bottom */
+    padding: 1em;
+}
+
+@media (min-width: 576px) {
+    .Hpart2 .felx {
+        margin-top: 1em;
+        /* Default margin-top for larger screens */
+        margin-bottom: 1em;
+        /* Default margin-bottom for larger screens */
+    }
+}
+
+
+/* Hpart 3 starts here */
+
+.Hpart3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5em 2em 5em 2em;
+}
+
+.card {
+    border: none !important;
+}
+
+.card img {
+    padding-left: 1em;
+    width: 70px;
+
+}
+
+@media (max-width:950px) {
+    .Hpart3 {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card {
+        width: 80% !important;
+    }
+
+}
+
+/* Hpart 4 starts here */
+
+.Hpart4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+.HPleft {
+    padding-top: 3em;
+    padding-bottom: 3em;
+    width: 70%;
+}
+
+.HPright {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.HPright img {
+    width: 300px;
+}
+
+.HPBtns {
+    display: flex;
+    gap: 1em;
+}
+
+.HPFirst {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 0.5em 1em 0.5em 1em;
+}
+
+.HPSecond {
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 35px;
+    padding: 0.5em 1em 0.5em 1em;
 }
