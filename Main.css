@@ -51,6 +51,14 @@
     padding: 10px;
     background-color: black;
     color: white;
+    border: 1px solid black;
+}
+
+.BUTN a:hover {
+    padding: 10px;
+    border: 1px solid black;
+    color: black;
+    background-color: white;
 }
 
 .btun {
@@ -125,9 +133,24 @@
     padding: 10px 20px 10px 20px;
 }
 
+.BTN1:hover {
+    background-color: white;
+    color: black;
+    padding: 10px 20px 10px 20px;
+}
+
 .BTN2 {
     background-color: white;
     color: black;
+    padding: 10px 20px 10px 20px;
+    border: 1px solid white;
+    border-radius: 30px;
+}
+
+.BTN2:hover {
+
+    color: white;
+    background-color: black;
     padding: 10px 20px 10px 20px;
     border-radius: 30px;
 }
@@ -207,7 +230,7 @@
     }
 
     .card {
-        width: 80% !important;
+        width: 100% !important;
     }
 
 }
@@ -220,23 +243,24 @@
     justify-content: space-between;
     margin-left: 3em;
     margin-right: 3em;
+    gap: 2em;
 }
 
 .HPleft {
     padding-top: 3em;
     padding-bottom: 3em;
-    width: 70%;
+    width: 60%;
 }
 
 .HPright {
-    width: 30%;
+    width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .HPright img {
-    width: 300px;
+    width: 500px;
 }
 
 .HPBtns {
@@ -258,4 +282,191 @@
     border: 2px solid black;
     border-radius: 35px;
     padding: 0.5em 1em 0.5em 1em;
+}
+
+@media (max-width: 1030px) {
+    .HPright img {
+        width: 300px;
+    }
+}
+
+@media (max-width:750px) {
+    .Hpart4 {
+        flex-direction: column-reverse;
+    }
+
+    .HPleft {
+        width: 100%;
+    }
+
+    .HPright {
+        width: 100%;
+    }
+
+    .HPright img {
+        width: 500px;
+    }
+}
+
+@media (max-width: 524px) {
+    .HPright img {
+        width: 300px;
+    }
+}
+
+/* Hpart 5 starts here */
+.Hpart5 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3em;
+    padding-right: 3em;
+    gap: 2em;
+    background-color: black;
+}
+
+.HP5left img {
+    width: 500px;
+}
+
+.HP5right {
+    color: white;
+}
+
+.HP5Btns {
+    display: flex;
+    gap: 1em;
+}
+
+.HP5First {
+    text-decoration: none;
+    padding: 5px 10px 5px 10px;
+    border: 1px solid white;
+    color: white;
+}
+
+.HP5Second {
+    text-decoration: none;
+    padding: 5px 10px 5px 10px;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+}
+
+@media (max-width: 1030px) {
+    .HP5left img {
+        width: 300px;
+    }
+}
+
+@media (max-width:750px) {
+    .Hpart5 {
+        flex-direction: column;
+    }
+
+    .HP5left {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .HP5right {
+        width: 100%;
+    }
+
+    .HP5left img {
+        width: 500px;
+    }
+}
+
+@media (max-width: 524px) {
+    .HP5left img {
+        width: 300px;
+    }
+}
+
+/* Hpart 9 start here */
+
+.Hpart9 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    padding: 3em;
+    /* width: 60%; */
+}
+
+.Hpart9 h1 {
+    /* width: 60%; */
+    text-align: center;
+}
+
+.Hpart9 p {
+    /* width: 60%; */
+    text-align: center;
+}
+
+/* footer */
+.fut {
+    margin: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.Lins {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.Lins li {
+    list-style: none;
+}
+
+.lang {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    padding: 10px;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+
+.lang li {
+    list-style: none;
+
+}
+
+.copy {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.start {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.start li {
+    list-style: none;
+}
+
+.end {
+    list-style: none;
+}
+
+@media (max-width:736px) {
+    .Lins {
+        flex-direction: column;
+    }
+
+    .copy {
+        flex-direction: column;
+    }
 }
